@@ -1,0 +1,21 @@
+model:
+  name: model_1
+  parameters:
+    embedding_dim: 128
+    num_layers: 2
+
+optimizer:
+  lr: 1.0e-4
+
+vocabulary:
+  captions_file_path: "./flickr8k/vocabulary_captions.txt"
+
+data:
+  train:
+    images_folder_path: "./flickr8k/train_images"
+    captions_file_path: "./flickr8k/train_captions.txt"
+    batch_size: 256
+  val:
+    images_folder_path: "./flickr8k/val_images"
+    captions_file_path: "./flickr8k/val_captions.txt"
+    batch_size: 256

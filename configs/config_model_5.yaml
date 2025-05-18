@@ -1,0 +1,23 @@
+model:
+  name: model_5
+  parameters:
+    embedding_dim: 256
+    hidden_dim: 256
+    num_layers: 6
+    num_heads: 8
+
+optimizer:
+  lr: 1.0e-4
+
+vocabulary:
+  captions_file_path: "./flickr8k/vocabulary_captions.txt"
+
+data:
+  train:
+    images_folder_path: "./flickr8k/train_images"
+    captions_file_path: "./flickr8k/train_captions.txt"
+    batch_size: 256
+  val:
+    images_folder_path: "./flickr8k/val_images"
+    captions_file_path: "./flickr8k/val_captions.txt"
+    batch_size: 256
